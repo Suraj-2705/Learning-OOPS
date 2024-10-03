@@ -19,7 +19,7 @@ char buffer[11]; // +1 for null terminator
 infile.read(buffer, 10);
 buffer[10] = '\0'; // Null-terminate the string
 
-std::cout << "Last 10 bytes of the file: " << buffer << std::endl;
+std::cout << "Last 10 bytes of the file: " <<   buffer << std::endl;
 
 infile.close();
 return 0;
