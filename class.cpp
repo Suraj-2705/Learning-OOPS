@@ -15,7 +15,11 @@ public:
     this->subject2 = sub2;
     this->subject3 = sub3;
     }
-    
+    void readinfo(const char* file)
+    {
+        ifstream file( reinterpret_cast<char*>(this), sizeof(*this));
+        file.read()
+    }
     void display(){
         cout<<"Student ID: "<<sid<<endl;
         cout<<"Student Name: "<<name<<endl;
