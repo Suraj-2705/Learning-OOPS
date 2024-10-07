@@ -21,6 +21,6 @@ buffer[10] = '\0'; // Null-terminate the string
 
 std::cout << "Last 10 bytes of the file: " <<   buffer << std::endl;
 
-infile.close();
+       infile.close();
 return 0;
 }
