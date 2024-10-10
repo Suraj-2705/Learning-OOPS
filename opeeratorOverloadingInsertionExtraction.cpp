@@ -8,11 +8,11 @@ class Point {
         this->x = x;
         this->y = y;
     }
-    friend void operator>> (istream& in, Point& p);
-    friend void operator<< (istream& out, Point& p);
+    friend void operator>>(istream& in, Point& p);
+    friend void operator<< (ostream& out, Point& p);
 
     
-};
+};  
 
     void operator >> (istream& in, Point& p){
         cout << "Enter the value of x: ";
@@ -32,5 +32,5 @@ class Point {
     Point P1, P2, P3;
     cin >> P3;
     cout << P3;
-
+   return 0;
 }
