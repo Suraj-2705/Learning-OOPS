@@ -25,5 +25,6 @@ class Point {
     Point p1(5, 6), p2(6, 8), p3;
     p3 = p1 + p2;
     p3.display();
+    return 0;
 
 }

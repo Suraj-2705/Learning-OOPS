@@ -42,4 +42,7 @@ int main(){
    a1->move();
    a2->sound();
    a2->move();
+   delete a1;
+   delete a2;
+   return 0;
 }
