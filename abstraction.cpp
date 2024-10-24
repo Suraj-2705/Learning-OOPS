@@ -5,6 +5,9 @@ class Animal{
     public:
         virtual void sound() = 0;
         virtual void move() = 0;
+        virtual ~Animal(){
+            cout << "Animal destructor called" << endl;
+        }
 };
 
 
@@ -20,6 +23,9 @@ class Bird : public Animal{
             cout << endl;
         }
         
+        ~Bird(){
+            cout<<"Bird dest"<<endl;
+        }
 };
 
 class Dog : public Animal{
@@ -32,6 +38,10 @@ class Dog : public Animal{
         void move(){
             cout << "Dog runs"<<endl;
             cout << endl;
+        }
+
+        ~Dog(){
+            cout<<"Dog dest"<<endl;
         }
 };
 
